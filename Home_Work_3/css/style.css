@@ -1,0 +1,95 @@
+*{
+	font-family:ms sans serif;
+	margin:0;
+	padding:0;
+}
+
+h1{
+	margin:10px 30px;
+	font-size: 55px;
+	font-stretch:condensed;
+}
+
+.solidblockmenu {
+	margin:10px 30px;	
+	font : 16px;
+	width:90%;
+	background:#4E4848;
+	float : left;
+	padding : 15px 40px;
+}
+.solidblockmenu li {
+	display : inline;
+}
+.solidblockmenu li a {
+	color : white;
+	padding : 15px 40px;
+	text-decoration : none;
+}
+.solidblockmenu li a:hover{
+	background-color:black;
+	border-right : 1px solid lightgray;
+	border-left : 1px solid lightgray;
+}
+
+img{
+	margin:0;
+	border:1px solid gray;
+}
+
+.solidblockmenu1 {
+	margin:10px 30px;	
+	font : 16px;
+	width:90%;
+	background:lightgray;
+	float : left;
+	padding : 15px 40px;
+}
+.solidblockmenu1 li {
+	display : inline;
+}
+.solidblockmenu1 li a {
+	color : black;
+	padding : 15px 40px;
+	text-decoration : none;
+}
+.solidblockmenu1 li a:hover{
+	background-color:lightgray;
+	text-decoration : underline;
+}
+.solidblockmenu1 li #textBlock1 {
+    width: 25%;
+    float: right;
+} 
+
+
+#textBlock {
+    width: 70%;
+    float: right;
+} 
+#textBlock p{
+	margin:30px 40px;
+	line-height:1.5;
+	font-size:15px;
+	width:90%;
+} 
+
+.solidblockmenu2 {
+	list-style-type:none;
+	margin:105px 30px;
+	padding:0;
+} 
+.solidblockmenu2 li a{
+    width:200px;
+	height:40px;
+	padding: 15px 0 0 40px;
+	display:block;	
+	border:1px solid gray;
+	text-decoration : none;
+	color:black;
+}
+.solidblockmenu2 li a:hover{
+	background-color:lightgray;
+	text-indent: 40px;
+}
+
