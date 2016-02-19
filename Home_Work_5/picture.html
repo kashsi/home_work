@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Цвет фона</title>
+		<style>
+			table {
+				border-collapse: collapse;
+				background: white;
+				width: 500px;
+				hight: 500px;
+				color: rgba(0,0,0,0);
+			}
+			td {
+				height: 25px;
+				padding: 10px;
+				border: 5px solid #000; /* стиль рамки ячеек */
+				width: 50px;
+			 }
+			.td1 {
+				background: yellow;
+			 }
+			.td2 {
+				background: black;
+			}
+			.td3 {
+				background: red;
+				padding-bottom: 195px;
+				padding-right: 260px;
+			}
+			.td4 {
+				background: blue;
+				padding-right: 125px;
+			}	
+		</style>
+		
+	</head>
+	
+	<body>
+	
+		<table>
+		
+			<tr>
+				<td colspan="2">1</td>
+				<td colspan="3">3</td>
+				<td class="td1", colspan="2", class="color1">6</td>
+			</tr>
+			
+			<tr>
+				<td rowspan="2">8</td>
+				<td class="td3", colspan="4", rowspan="4">9</td>
+				<td class="td1", colspan="2" rowspan="2">13</td>
+			</tr>
+			
+			<tr>
+
+			</tr>
+			
+			<tr>
+				<td rowspan="3">22</td> 
+				<td rowspan="2">27</td>
+				<td rowspan="2">28</td>
+			</tr>
+			
+			<tr>     
+			
+			</tr>
+			
+			<tr>
+				<td class="td2", colspan="2", rowspan="2">37</td>
+				<td colspan="2">39</td>
+				<td colspan="2">41</td>
+			</tr>
+			  
+			<tr>
+				<td class="td1" rowspan="3">43</td>
+				<td colspan="2">46</td>
+				<td class="td4" colspan="2", rowspan="2">48</td>	
+			</tr>
+			
+			<tr>
+				<td colspan="2" rowspan="2">51</td>
+				<td class="td2", colspan="2">53</td>
+			</tr>
+			
+			<tr>
+				<td colspan="4">60</td>	 
+			</tr>
+			
+		</table>
+		
+	</body>
+</html>

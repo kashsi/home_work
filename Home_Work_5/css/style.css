@@ -1,0 +1,215 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body { 
+	background: url("../img/homework_5.png") no-repeat; 
+	background-size: 100%;
+}
+
+/* --------- header ------------- */
+.header {
+    float: right;
+	width: 100%;
+	background: #081A9E;
+	padding-right: 15px;
+	font-family: "helveticaneuecyr-medium", tahoma, arial;
+}
+.header .box_1 {
+	float: right;
+	text-align: center;
+	background: linear-gradient(to top, #184AFF 30%, #17C9FF 100%);
+	padding: 10px 20px;
+	border-radius: 2px;
+}
+.header .box_2 {
+	float: right;
+	text-align: center;
+	background: #081A9E;
+	padding: 10px 20px 0px 0px;
+}
+.header .box_3 {
+	float: right;
+	text-align: center;
+	background: #081A9E;
+	padding: 0px 10px;
+}
+.header .box_3 img {
+	width: 35px; 
+}
+.header .box_1 a,
+.header .box_3 a  {
+	color: #ffffff;
+}
+.header .box_2 a {
+	color: #ffffff;
+	text-decoration: none;
+}
+.header .mainmenu {
+	float: right;
+	list-style-type:none;
+	background: #081A9E;
+	padding: 10px 0px 10px 0px;
+	border-right: 1px solid #18BDFF;
+}
+.header .mainmenu li {
+	float: right;
+}
+ .header .mainmenu li a {
+	color: #18BDFF;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px 17px;
+}
+.header .mainmenu li a:hover {
+	background-color: #18BDFF;
+	color: #ffffff;
+}
+.hedar .clearfix:after {
+	content: '';
+	clear: both;
+	display: block;	
+}
+
+/* --------- content ------------- */
+.content  {
+	float: left;
+	width: 100%;
+	height: 100%;
+	color: white;
+	font-size: 22px;
+	font-family: "helveticaneuecyr-medium", tahoma, arial;
+}
+.content .box_center {
+	width: 42%;
+	margin-top: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10%;
+	text-align: center;
+}
+.content .box_center .box_center_top {
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2px;
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+}
+.content .box_center .box_center_top p {
+	padding: 20px 0px;
+}
+.content .box_center .box_center_body {
+	clear: both;
+	margin: 20% auto;
+	margin-top: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 35px;
+}
+.content .box_center .box_center_body  a.button{
+	background: linear-gradient(to top, #07164C 30%, #081A9E 100%);
+	display: block;
+	color: #ffffff;
+	height: 35px;
+	line-height: 34px;
+	margin-bottom: 14px;
+	text-decoration: none;
+	width: 47%;
+	margin-left: 27%;
+	border-radius: 5px;
+	font-family: "helveticaneuecyr-bold", tahoma, arial;
+}
+.content .box_center .box_center_body  a:hover.button{
+	color: #0066CC;
+}
+.content .box_center .box_center_body  a.button .add{
+	background: url(../img/f.ico) no-repeat 5px 3px;
+	text-indent: 15px;
+	display: block;	
+}
+.content .box_center .box_center_body p {
+	font-size: 16px;
+	padding: 12px 5px;
+}
+.box_center_l_right {
+	float: right;
+	border: 1px solid gray;
+	width: 19%;
+	margin-top: 10px;
+	box-shadow: 1px 1px 1px black;
+	margin-right: 27%;
+}
+.box_center_l_left {
+	float: left;
+	border: 1px solid gray;
+	width: 19%;
+	margin-top: 10px;
+	box-shadow:  1px 1px 1px black;
+	margin-left: 27%;
+	margin-right: 0px;
+}
+.box_center_l_center {
+	float: right;
+	width: 7%;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	margin-bottom: 15px;
+	font-size: 18px;
+}
+.content .box_center .box_center_body  form {
+	clear: both;
+}
+.content .box_center .box_center_body  form .form_field {
+	width: 45%;
+	height: 35px;
+	font-size: 16px;
+	background: #151515;
+	border: none;
+	text-align: left;
+	padding-left: 10px;
+}
+.content .box_center .box_center_body form .form_field:focus {
+	border: 20px solid linear-gradient(to top, #07164C 30%, #081A9E 100%);
+	background: #07164C;
+	box-shadow: 2px 3px 3px #3D4AFF;
+}
+.content .box_center .box_center_body form .form_field:hover {
+	background: rgba(0,0,255,0.55);
+}
+.content .box_center .box_center_body form  #n_send {
+	margin-bottom: 10px;
+}
+.content .box_center .box_center_body form  #form_but {
+	width: 30%;
+	height: 35px;
+	font-size: 16px;
+	background: linear-gradient(to top, #0A77B7 30%, #01C4FF  100%);
+	border: none;
+	border-radius: 3px;
+	color: white;
+	margin-bottom: 10px;
+}
+
+.content .box_center  .box_center_body .box_center_bottom p {
+	font-size: 12px;
+	padding: 4px 0px;
+}
+
+@font-face {
+    font-family: "helveticaneuecyr-light"; 
+    src: url(../fonts/helveticaneuecyr-light.eot);
+    src: local(helveticaneuecyr-light), url(../fonts/helveticaneuecyr-light.ttf);
+    font-family: "helveticaneuecyr-medium"; 
+    src: url(../fonts/helveticaneuecyr-medium.eot);
+    src: local(helveticaneuecyr-medium), url(../fonts/helveticaneuecyr-medium.ttf);
+    font-family: "helveticaneuecyr-bold"; 
+    src: url(../fonts/helveticaneuecyr-bold.eot);
+    src: local(helveticaneuecyr-bold), url(../fonts/helveticaneuecyr-bold.ttf);
+}
