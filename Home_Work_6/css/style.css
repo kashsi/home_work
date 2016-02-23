@@ -3,8 +3,17 @@
 	padding:0;
 }
 
+header,
+main,
+footer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+}
+
 header {
 	font-family: arial, tahoma, "sans serife";
+	height: 331px;
 }
 header .header_telephone {
 	float: left;
@@ -149,7 +158,9 @@ header .box_header_menu .clearfix:after {
 	display: block;	
 }
 
-
+main {
+	height: 633px;
+}
 main .left_side {
 	clear: both;
 	float: left;
@@ -568,7 +579,9 @@ main .right_side .clearfix:after {
 	display: block;	
 }	
 
-
+footer {
+	height: 191px;
+}
 footer .footer_logo {
 	clear: both;
 	padding-top: 37px;
