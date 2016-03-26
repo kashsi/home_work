@@ -1,0 +1,98 @@
+@charset 'UTF-8';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Tabs ************************************************************** */
+
+.boxTabs {
+	width: 80%;
+	height: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	background: #F2F2F2;
+	box-shadow: 2px 2px 2px 2px #585858;
+}
+
+.tabsMenuItem {
+	display: inline;
+}
+
+.tabsButton {
+	width: 90px;
+	height: 30px;
+	font-family: arial, helvetica;
+	border-radius: 8px 8px 0px 0px;
+}
+
+.tabsDiv {
+	height: 79%;
+	border-top: 2px solid #BDBDBD;
+	font-family: arial, helvetica;
+	font-size: 30px;
+	padding: 10px;
+	background: #E0E0E0;	
+}
+
+/* Form ************************************************************** */
+
+.formBox {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: arial, helvetica;
+	box-shadow: 2px 2px 2px 2px #585858;
+}
+
+fieldset {
+	background: #E6E6E6;	
+}
+
+fieldset div {
+    margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+label {
+    display: inline-block; 
+	width: 70px;
+	height: 30px;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-size: 14px;
+}
+
+input {
+	font-family: arial, helvetica;
+}
+
+.helpButton {
+	margin-left: 20%;
+	margin-top: 6px;
+	width: 100px;
+	height: 35px;
+	font-family: arial, helvetica;
+	font-size: 14px;
+	border-radius: 5px;
+	background: linear-gradient(to top, #DCDCDC, #F2F2F2);
+} 
+
+.toolTip {
+    display: inline-block; 
+	width: 240px;
+	height: 20px;
+	margin: 0px 0px 0px 5px;
+	padding-top: 7px;
+	text-align: center;	
+	border: 1px solid #BDBDBD;
+	border-radius: 10px;
+	box-shadow: 1px 1px 1px 1px #BDBDBD;
+	background: linear-gradient(to top, #DCDCDC, #FFFFFF);
+	font-size: 12px;
+}
+
+

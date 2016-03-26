@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+	
+        <meta charset="utf-8">
+		<title>JavascriptHomeWork_8</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="js/scripts.js" defer></script>
+		
+	</head>
+	
+	<body>	
+	
+	<!-- TABS ************************************************************ -->
+	
+		<div class="boxTabs">
+			<ul class="tabsMenu">
+				<li class="tabsMenuItem">
+					<button class="tabsButton" id="btabs_1">tabs_1</button>
+				</li>
+				<li class="tabsMenuItem">
+					<button class="tabsButton" id="btabs_2">tabs_2</button>
+				</li>
+				<li class="tabsMenuItem">
+					<button class="tabsButton" id="btabs_3">tabs_3</button>
+				</li>
+			</ul>
+			<div class="tabsDiv" id="ntabs_1">
+				<p>tabs_1</p>
+			</div>
+			<div class="tabsDiv" id="ntabs_2">
+				<p>tabs_2</p>
+			</div>
+			<div class="tabsDiv" id="ntabs_3">
+				<p>tabs_3</p>
+			</div>
+		</div>		
+		
+	<!-- FORM ************************************************************ -->
+	
+ 		<form class="formBox">
+			<fieldset>
+				<div>
+					<label for="firstname">Firstname</label>
+					<input id="firstname" name="firstname">
+					<div class="toolTip" id="helpFirstname">Please provide your firstname.</div>
+				</div>
+				<div>
+					<label for="lastname">Lastname</label>
+					<input id="lastname" name="lastname">
+					<div class="toolTip" id="helpLastname">Please provide also your lastname.</div>
+				</div>
+				<div>
+					<label for="address">Address</label>
+					<input id="address" name="address">
+					<div class="toolTip" id="helpAddress">Your home or work address.</div>
+				</div>
+			</fieldset>
+		</form> 
+		<button class="helpButton" id="butHelp">Show help</button>
+		
+	</body>	
+	
+</html>
