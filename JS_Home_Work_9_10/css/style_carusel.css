@@ -1,0 +1,21 @@
+@import '//fonts.googleapis.com/css?family=Lato:400,400italic|Arvo:700,400,400italic';
+
+h1 {
+	font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-align: center;
+	font-weight: normal;
+	text-rendering: optimizelegibility;
+    color: #4E443C;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+a {
+	color: #0388A6;
+}
+
+.wrapper {
+    max-width: 620px;
+    padding: 0 20px 40px 20px;
+    margin: auto;
+}

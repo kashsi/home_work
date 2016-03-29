@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+	
+        <meta charset="utf-8">
+		
+		<title>JavascriptHomeWork_10</title>		
+
+		<!-- CARUSEL CSS ***************************************** -->
+ 		<link href="css/style_carusel.css" rel="stylesheet" type="text/css">
+        <link href="css/jcarousel.data-attributes.css" rel="stylesheet" type="text/css">
+
+		<!-- Standard Dropdown select CSS ***************************************** -->
+		<link type="text/css" rel="stylesheet" href="css/jquery.selectBox.css"/>
+		
+		<link href="css/style.css" rel="stylesheet" type="text/css">		
+		
+		<!-- JQ -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		
+		<!-- UnStandard Checkbox jq ***************************************** -->
+		<script type="text/javascript" src="js/jquery.checkbox.js"></script>
+
+		<!-- COLOR animate ***************************************** -->
+ 		<script type="text/javascript" src="js/jquery.color.js"></script>
+		
+		<!-- CARUSEL JS ***************************************** -->
+         <script src="js/jquery.jcarousel.min.js" type="text/javascript"></script>		
+        <script src="js/jcarousel.data-attributes.js" type="text/javascript"></script>
+
+		<!-- Standard Dropdown select JS ***************************************** -->
+		<script type="text/javascript" src="js/jquery.selectBox.js"></script>
+		
+		<script src="js/scripts.js" type="text/javascript" defer></script>	
+		
+	</head>
+	
+	<body>	
+	
+		<!-- MENU ***************************************** -->
+		
+		<div id="boxMenu">
+		
+			<ul id="myMenu">
+			
+				<li class="myMenuLi"><a href="#">Item_1</a></li>
+				
+				<li class="myMenuLi"><a href="#">Item_2 &#9660;</a>
+				
+					<ul id="mySubMenu">
+						<li class="mySubMenuLi"><a href="#">Item_2_1</a></li>
+						
+						<li class="mySubMenuLi"><a href="#">Item_2_2 &#9660;</a>
+						
+							<ul id="mySubMenu_Sub">
+								<li class="mySubMenuLi_Sub"><a href="#">Item_2_2_1</a></li>
+								
+								<li class="mySubMenuLi_Sub"><a href="#">Item_2_2_2 &#9660;</a>
+								
+									<ul id="mySubMenu_Sub_Sub">
+										<li class="mySubMenuLi_Sub_Sub"><a href="#">Item_2_2_2_1</a></li>
+										<li class="mySubMenuLi_Sub_Sub"><a href="#">Item_2_2_2_2</a></li>
+										<li class="mySubMenuLi_Sub_Sub"><a href="#">Item_2_2_2_3</a></li>
+										<li class="mySubMenuLi_Sub_Sub"><a href="#">Item_2_2_2_4</a></li>
+										<li class="mySubMenuLi_Sub_Sub"><a href="#">Item_2_2_2_5</a></li>
+										<li class="mySubMenuLi_Sub_Sub"><a href="#">Item_2_2_2_6</a></li>
+									</ul>								
+								</li>
+								
+								<li class="mySubMenuLi_Sub"><a href="#">Item_2_2_3</a></li>
+								<li class="mySubMenuLi_Sub"><a href="#">Item_2_2_4</a></li>
+								<li class="mySubMenuLi_Sub"><a href="#">Item_2_2_5</a></li>
+								<li class="mySubMenuLi_Sub"><a href="#">Item_2_2_6</a></li>
+								<li class="mySubMenuLi_Sub"><a href="#">Item_2_2_7</a></li>
+							</ul>
+							
+						</li>
+						
+						<li class="mySubMenuLi"><a href="#">Item_3_3</a></li>
+						<li class="mySubMenuLi"><a href="#">Item_3_4</a></li>
+						<li class="mySubMenuLi"><a href="#">Item_3_5</a></li>
+						<li class="mySubMenuLi"><a href="#">Item_3_6</a></li>
+						<li class="mySubMenuLi"><a href="#">Item_3_7</a></li>
+					</ul>
+					
+				</li>
+				
+				<li class="myMenuLi"><a href="#">Item_3 &#9660;</a>
+				
+					<ul id="mySubMenu">
+						<li class="mySubMenuLi"><a href="#">Item_3_1</a></li>
+						<li class="mySubMenuLi"><a href="#">Item_3_2 &#9660;</a>
+						
+							<ul id="mySubMenu_Sub">
+								<li class="mySubMenuLi_Sub"><a href="#">Item_3_2_1</a></li>
+								<li class="mySubMenuLi_Sub"><a href="#">Item_3_2_2 &#9660;</a>
+								
+									<ul id="mySubMenu_Sub_Sub">
+										<li class="mySubMenuLi_Sub_Sub"><a href="#">Item_3_2_2_1</a></li>
+										<li class="mySubMenuLi_Sub_Sub"><a href="#">Item_3_2_2_2</a></li>
+										<li class="mySubMenuLi_Sub_Sub"><a href="#">Item_3_2_2_3</a></li>
+										<li class="mySubMenuLi_Sub_Sub"><a href="#">Item_3_2_2_4</a></li>
+										<li class="mySubMenuLi_Sub_Sub"><a href="#">Item_3_2_2_5</a></li>
+										<li class="mySubMenuLi_Sub_Sub"><a href="#">Item_3_2_2_6</a></li>
+									</ul>								
+								</li>								
+								
+								</li>
+								<li class="mySubMenuLi_Sub"><a href="#">Item_3_2_3</a></li>
+								<li class="mySubMenuLi_Sub"><a href="#">Item_3_2_4</a></li>
+								<li class="mySubMenuLi_Sub"><a href="#">Item_3_2_5</a></li>
+							</ul>
+							
+						</li>
+						<li class="mySubMenuLi"><a href="#">Item_3_3</a></li>
+						<li class="mySubMenuLi"><a href="#">Item_3_4</a></li>
+						<li class="mySubMenuLi"><a href="#">Item_3_5</a></li>
+						<li class="mySubMenuLi"><a href="#">Item_3_6</a></li>
+					</ul>
+					
+				</li>
+				
+				<li class="myMenuLi"><a href="#">Item_4</a></li>
+				
+				<li class="myMenuLi"><a href="#">Item_5</a></li>
+				
+			</ul>
+			
+		</div>	
+		
+		<!-- UnStandard Checkbox jq***************************************** -->
+		
+		<div id="divCheckbox">
+			<div>
+				<label class="labelniceCheck" id="label_ch1" for="ch1">label 1</label>
+				<span class="niceCheck" id="spanch1">
+					<input class="inputniceCheck" type="checkbox" id="ch1" /> 
+				</span>
+			</div>
+			<div>
+				<label class="labelniceCheck" id="label_ch2" for="ch2">label 2</label>
+				<span class="niceCheck" id="spanch2">
+					<input class="inputniceCheck" type="checkbox" id="ch2" />
+				</span>
+			</div>
+			<div>
+				<label class="labelniceCheck" id="label_ch3" for="ch3">label 3</label>
+				<span class="niceCheck" id="spanch3">
+					<input class="inputniceCheck" type="checkbox" id="ch3" checked="checked"/>
+				</span>
+			</div>
+		</div>
+		
+		<!-- UnStandard Checkbox css***************************************** -->
+		
+		<div id="divCheckbox_2">
+			<div>
+				<input class="inputniceCheck_2" type="checkbox" id="test-check1" />
+				<label class="labelniceCheck_2" for="test-check1">Чекбокс 1:</label>	
+			</div>		
+			<div>
+				<input class="inputniceCheck_2" type="checkbox" id="test-check2" />
+				<label class="labelniceCheck_2" for="test-check2">Чекбокс 2:</label>	
+			</div>		
+			<div>
+				<input class="inputniceCheck_2" type="checkbox" id="test-check3" checked="checked" />
+				<label class="labelniceCheck_2" for="test-check3">Чекбокс 3:</label>	
+			</div>		
+		</div>
+		
+		<!-- Standard Dropdown select ***************************************** -->
+		
+		<div id="divStandard-dropdown">
+			<select id="standard-dropdown" name="standard-dropdown" class="custom-class1 custom-class2" style="width: 200px;">
+				<option value="1" class="test-class-1">Item 1</option>
+				<option value="2" class="test-class-2" selected="selected">Item 2</option>
+				<option value="3" class="test-class-3">Item 3 has a really long label that will not interfere with the control's width
+				</option>
+				<option value="4" class="test-class-4">Item 4</option>
+				<option value="5" disabled="disabled">Item 5 (disabled)</option>
+				<option value="6">Item 6</option>
+				<option value="7">Item 7</option>
+				<option value="8">Item 8</option>
+				<option value="9">Item 9</option>
+				<option value="10">Item 10</option>
+			</select>
+		</div>
+		
+		<!-- CARUSEL ******************************************************* -->
+	
+        <div class="wrapper">
+		
+            <h1>Carousel</h1>
+
+            <div class="jcarousel-wrapper">
+                <div data-jcarousel="true" data-wrap="circular" class="jcarousel">
+                    <ul>
+                        <li><img src="img/img1.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/img2.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/img3.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/img4.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/img5.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/img6.jpg" width="600" height="400" alt=""></li>
+                    </ul>
+                </div>
+
+                <a data-jcarousel-control="true" data-target="-=1" href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a data-jcarousel-control="true" data-target="+=1" href="#" class="jcarousel-control-next">&rsaquo;</a>
+                
+                <p class="jcarousel-pagination"></p>
+            </div>
+			
+        </div>
+		
+	
+	</body>	
+	
+</html>

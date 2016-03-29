@@ -1,0 +1,138 @@
+@charset 'UTF-8';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    background: #F0EFE7;
+    margin: 0;
+    padding: 0;
+    font: 15px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #4E443C;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+/* Standard Dropdown select *****************************************  */
+#divStandard-dropdown {
+	margin: 20px 10px 40px 10px;
+}
+
+/* UnStandard Checkbox jq*****************************************  */
+#divCheckbox {
+	margin: 20px 10px 20px 10px;
+	padding-left: 10px;
+	background: #C9D6F2;
+	width: 200px;
+}
+
+.niceCheck {
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	cursor: pointer;
+	background: url(../img/checkbox.png);
+}
+
+.inputniceCheck{
+	display: none;
+}
+
+/* UnStandard Checkbox css ***************************************** */
+#divCheckbox_2 {
+	margin: 20px 10px 20px 10px;
+	padding-left: 10px;
+	background: #C9D6F2;
+	width: 200px;
+}
+
+.inputniceCheck_2[type=checkbox] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+
+.labelniceCheck_2 {
+	cursor: pointer;
+}
+
+.labelniceCheck_2:after {
+	content: " ";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url(../img/checkbox_2.png);
+	position: relative;
+	top: 3px;
+	margin-left: 15px;
+}
+
+.inputniceCheck_2[type=checkbox]:checked + .labelniceCheck_2:after {
+	background-position: 0 -17px;
+}
+
+.labelniceCheck_2:hover:after {
+	background-position: 0 -34px;
+}
+
+.inputniceCheck_2[type=checkbox]:checked + .labelniceCheck_2:hover:after {
+	background-position: 0 -51px;
+}
+
+/* MENU ***************************************** */
+#boxMenu {
+	height: 20px;
+	background: #FF4255;
+	padding: 10px 0;
+}
+#myMenu {
+	list-style-type:none;
+	background: #FF4255;
+	margin:0;
+	margin-left: 100px;
+    padding:0;
+	display: block;	
+}
+.myMenuLi {
+	display:inline-block;
+	float: left;
+	padding: 0px 40px;
+}
+.myMenuLi a {
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+.myMenuLi a:hover {
+	color: #98000F;
+}
+
+#mySubMenu,
+#mySubMenu_Sub,
+#mySubMenu_Sub_Sub {
+	list-style-type:none;
+	background-color: #D20000;
+	position: absolute;
+	left: 0px;
+}
+#mySubMenu,
+#mySubMenu_Sub_Sub {
+	display: none;
+}
+#mySubMenu_Sub {
+	width: 140px;
+	opacity: 0;
+}
+#mySubMenu_Sub_Sub {
+	width: 130px;
+}
+#mySubMenu .mySubMenuLi,
+#mySubMenu_Sub .mySubMenuLi_Sub,
+#mySubMenu_Sub_Sub .mySubMenuLi_Sub_Sub {
+	padding: 10px 20px;
+	border-bottom: 1px solid red;
+	position: relative;
+}
+
+
+
