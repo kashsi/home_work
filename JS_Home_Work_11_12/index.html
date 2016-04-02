@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+    <head>	
+        <meta charset="utf-8">		
+		<title>JavascriptHomeWork_12</title>
+		
+		<link href="css/style_carusel.css" rel="stylesheet" type="text/css">	
+		<link href="css/style.css" rel="stylesheet" type="text/css">	
+		
+		<!-- JQ -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		
+		<script src="js/slider.js" type="text/javascript" defer></script>
+		<script src="js/tmpl.js" type="text/javascript" defer></script>
+		
+		<script src="js/scripts.js" type="text/javascript" defer></script>
+		
+	</head>
+	
+	<body>	
+		
+		<!-- CARUSEL *************************************** -->
+		
+		<h1 align="center">CARUSEL PLAGIN</h1>
+		
+		<div class="carousel">
+			<div class="carousel-arrow-left"><span>&#8592;</span></div>
+			<div class="carousel-hider">
+				<ul class="carousel-list">
+					<li class="carousel-element"><img src="img/img1.jpg"><p>Описание 1</p></li>
+					<li class="carousel-element"><img src="img/img2.jpg"><p>Описание 2</p></li>
+					<li class="carousel-element"><img src="img/img3.jpg"><p>Описание 3</p></li>
+					<li class="carousel-element"><img src="img/img4.jpg"><p>Описание 4</p></li>
+					<li class="carousel-element"><img src="img/img5.jpg"><p>Описание 5</p></li>
+					<li class="carousel-element"><img src="img/img6.jpg"><p>Описание 6</p></li>
+				  </ul>
+			</div>
+			<div class="carousel-arrow-right"><span>&#8594;</span></div>
+		</div>
+		
+		<div class="clearAfter">
+		</div>
+	
+		<!-- TEMPLATE *************************************** -->
+
+		<h1 align="center">TEMPLATE</h1>
+		
+		<script type="text/template" id="myTemplate">
+	
+			<div class="wrapperTemplate" align="center">
+			
+				<div class="wrapperBox">
+				
+					<h1><%= data.myName %></h1>
+					<div class="imageBox" align="center">
+						<img class="myImage" src=<%= data.myImage %> alt="My img">
+					</div>
+					<p><%= data.myStudent %></p>
+					
+					<hr>
+					
+					<p class="pTmpl"><%= data.myQuestion %></p>
+					
+						<% for(var i = 0; i < data.myAns.length; i++) { %>
+							<li class="pTmpl"><%= data.myAns[i].answer %></li>
+						<% }; %>
+					
+					<hr>
+					
+					<p class="pTmpl">My contact phone:</p>
+					<p class="pTmpl"><%= data.myPhone %></p>
+					<p class="pTmpl">My profile in contact:</p>
+					<div class="boxContact" align="left">
+						<a href=<%= data.myRefContact %> target="_blank">vk.com</a>
+					</div>
+									
+				</div>
+				
+			</div>
+		
+		</script> 
+	
+	
+	</body>	
+	
+</html>		

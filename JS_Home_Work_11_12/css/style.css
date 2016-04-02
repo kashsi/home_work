@@ -1,0 +1,45 @@
+@charset 'UTF-8';
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* TEMPLATE *********************************** */
+
+.wrapperTemplate {
+	background-color: lightgray;
+}
+
+.wrapperBox {
+	padding: 10px;
+	background-color: rgb(240, 240, 255);
+	width: 550px;
+}
+
+.myImage {
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+}
+
+.wrapperBox h1 {
+	font-family: arial, helvetica, tahoma;
+	font-size: 36px;
+}
+
+.wrapperBox p {
+	font-family: arial, helvetica, tahoma;
+	font-size: 18px;
+	padding-bottom: 10px;
+}
+
+.pTmpl {
+	font-family: arial, helvetica, tahoma;
+	font-size: 16px;
+	text-align: left;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+
+
