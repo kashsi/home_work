@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<title>JavascriptHomeWork_3_4</title>
+		
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		
+		<!-- JQUERY ------------------------------- -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		
+		<script src="js/tmpl.js" type="text/javascript" defer></script>
+
+		<script src="js/scripts.js"  type="text/javascript" defer></script>
+		
+	</head>
+	
+	<body>
+	
+		<!-- TEMPLATE *************************************** -->
+		
+		<script type="text/template" id="myTemplate">
+	
+			<div class="wrapperBox">
+			
+				<p class="pTmpl"><%= data.title %></p>
+				
+				<% for(var i = 0; i < data.questionData.length; i++) { %>
+					<div class="wrapperQuestBox">
+						<p><%= i+1 + ". " %><%= data.questionData[i].quest %></p>
+						<ol>
+						<% for(var j = 0; j < data.answerData[i].length; j++) { %>
+							<li>
+								<input type="radio" name=<%= "nameRadio_" + i %> id=<%= "idRadio_" + i + j %>>
+								<label for=<%= "idRadio_" + i + j %>><%= data.answerData[i][j].ansText%></label>
+							</li>
+						<% }; %>
+						</ol>
+					</div>
+				<% }; %>
+				
+				<div class="wrapperButtonBox">
+					<button class="verifyButton"><%= data.buttonTitle%></button>
+				</div>
+			
+			</div>
+	
+		</script>
+		
+	</body>
+
+</html>
