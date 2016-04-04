@@ -80,6 +80,7 @@ body {
 }
 
 /* MENU ***************************************** */
+
 #boxMenu {
 	height: 20px;
 	background: #FF4255;
@@ -90,13 +91,13 @@ body {
 	background: #FF4255;
 	margin:0;
 	margin-left: 100px;
-    padding:0;
+    padding: 0;
 	display: block;	
 }
 .myMenuLi {
 	display:inline-block;
 	float: left;
-	padding: 0px 40px;
+	width: 140px;
 }
 .myMenuLi a {
 	color: white;
@@ -107,28 +108,33 @@ body {
 	color: #98000F;
 }
 
-#mySubMenu,
-#mySubMenu_Sub,
-#mySubMenu_Sub_Sub {
+.mySubMenu,
+.mySubMenu_Sub,
+.mySubMenu_Sub_Sub {
 	list-style-type:none;
 	background-color: #D20000;
+	display: block;
 	position: absolute;
-	left: 0px;
+	width: 140px;
 }
-#mySubMenu,
-#mySubMenu_Sub_Sub {
+.mySubMenu,
+.mySubMenu_Sub_Sub {
 	display: none;
 }
-#mySubMenu_Sub {
+.mySubMenu_Sub {
 	width: 140px;
 	opacity: 0;
+	top: 0px;
+	left: 140px;
 }
-#mySubMenu_Sub_Sub {
+.mySubMenu_Sub_Sub {
 	width: 130px;
+	top: 0px;
+	left: 140px;
 }
-#mySubMenu .mySubMenuLi,
-#mySubMenu_Sub .mySubMenuLi_Sub,
-#mySubMenu_Sub_Sub .mySubMenuLi_Sub_Sub {
+.mySubMenu .mySubMenuLi,
+.mySubMenu_Sub .mySubMenuLi_Sub,
+.mySubMenu_Sub_Sub .mySubMenuLi_Sub_Sub {
 	padding: 10px 20px;
 	border-bottom: 1px solid red;
 	position: relative;
