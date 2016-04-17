@@ -1,0 +1,746 @@
+@charset 'UTF-8';
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+$marginLeft: 10px;
+$menuMarginVert: 15px;
+$widthPercent: 100%;
+$widthMax: 1160px;
+
+
+body {
+	font-family: arial, helvetica, tahoma;
+}
+
+header {
+
+	width: $widthPercent;
+	max-width: $widthMax;
+	height: (135px - 2 * $menuMarginVert);
+	margin: 15px auto 0 auto;
+
+	.wrapperImgHeader {
+		width: 38px;
+		height: 38px;
+		background-color: #FFBF00;
+		background-image: url("../img/Gear.png");
+		background-size: cover;
+		display: block;
+		float: left;
+	}
+	
+	.wrapperTitleHeader {
+		display: block;
+		float: left;
+		margin-left: $marginLeft;
+	}
+	
+	.bh {
+		font-size: 22px;
+	}
+	
+	.it {
+		font-size: 14px;
+	}
+	
+	.wrapperContactHeader {
+	
+		$width: 30px;
+		$height: $width;
+	
+		display: block;
+		float: right;
+		
+		.divContactHeaderIcon {
+			display: block;
+			float: left;
+			width: $width;
+			height: $height;
+		}
+		
+		.headerIcon {
+			width: $width;
+			height: $height;
+		}		
+	
+		.headerIcon-1 {
+			background-image: url("../img/Header_1.png");
+		}
+		.headerIcon-1:hover{
+			background-image: url("../img/Header_1_hover.png");
+		}
+		.headerIcon-2 {
+			background-image: url("../img/Header_2.png");
+		}
+		.headerIcon-2:hover{
+			background-image: url("../img/Header_2_hover.png");
+		}
+		.headerIcon-3 {
+			background-image: url("../img/Header_3.png");
+		}
+		.headerIcon-3:hover{
+			background-image: url("../img/Header_3_hover.png");
+		}
+		.headerIcon-4 {
+			background-image: url("../img/Header_4.png");
+		}
+		.headerIcon-4:hover{
+			background-image: url("../img/Header_4_hover.png");
+		}
+		.headerIcon-5 {
+			background-image: url("../img/Header_5.png");
+		}
+		.headerIcon-5:hover{
+			background-image: url("../img/Header_5_hover.png");
+		}
+
+	}
+	
+	.wrapperMenu {
+		display: block;
+		float: left;
+		width: 100%;
+		background: #2a2d32;
+		margin-top: (33px - $menuMarginVert);
+		
+		.menu {
+			margin: ($menuMarginVert - 1px) 0; 
+		}
+		.menu_item {
+			display: inline;
+			text-align: center;
+			font-size: 14px;
+			padding: $menuMarginVert 15px;
+			border-right: 1px solid #000000;
+		}
+		.menu_item-first {
+			background: #248cec;
+		}
+		.menu_link {
+			color: #FFFFFF;
+			text-decoration: none;
+		}
+		.menu_link:hover {
+			color: #FFFF00;
+		}
+		.menu_item-first:hover {
+			background: #0053a0;
+		}		
+		
+		.wrapperSearch {
+			width: 200px;
+			height: 30px;
+			margin-top: -2 * $menuMarginVert - 14px + 5px;
+			margin-right: 5px;
+			display: block;
+			float: right;
+			background: #494444;
+			border: 1px solid #000000;
+			
+			.inputSearch {
+				width: 160px;
+				height: 30px;
+				background: #494444;
+				border: none;
+				padding-left: 5px;
+			}
+			
+			.inputSearch:focus {
+				color: #FFFFFF;
+			}
+			
+			.buttonSearch {
+				width: 20px;
+				height: 20px;
+				display: block;
+				float: right;
+				margin-top: 5px;
+				margin-right: 5px;
+				background: url("../img/magnifier_left.png");
+				background-repeat: no-repeat;
+			}
+		}
+	}
+	
+}
+
+.wrapperCarusel {
+	width: $widthPercent;
+	max-width: $widthMax;
+	max-height: 470px;
+	margin: 25px auto 0 auto;
+							
+	.jcarousel {
+		position: relative;
+		overflow: hidden;
+		width: $widthPercent;
+		max-width: $widthMax;
+		max-height: 470px;
+	}
+
+	.jcarousel ul {
+		width: 20000em;
+		position: relative;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.jcarousel li {
+		float: left;
+	}						
+							
+	.jcarousel-pagination {
+		position: relative;
+		top: -40px;
+		left: 45%;
+		width: 90px;
+		margin-right: auto;
+	}
+
+	.jcarousel-pagination a {
+		text-decoration: none;
+		display: inline-block;
+		
+		font-size: 0px;
+		line-height: 3px;
+		min-width: 3px;
+		border: 3px solid #FFFFFF;
+		
+		background: #FFFFFF;
+		color: #FFFFFF;
+		border-radius: 1px;
+		padding: 3px;
+		text-align: center;
+		
+		margin-right: 10px;
+		
+		opacity: .9;
+	}
+
+	.jcarousel-pagination a.active {
+		background: #000000;
+		color: #FFFFFF;
+		opacity: 1;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+	}
+	
+	.carouselSign_1, 
+	.carouselSign_2 {
+		position: relative;
+		top: -230px;
+		left: 5%;
+		background: rgba(0, 0, 0, 0.8);
+	}
+	.carouselSign_1 {
+		width: 170px;
+		height: 100px;
+	}
+	.carouselSign_2 {
+		width: 280px;
+		height: 60px;
+	}
+	.pSign_1,
+	.pSign_2,
+	.pSign_3,
+	{
+		position: relative;
+		left: 6.5%;
+		top: -375px;
+		font-size: 50px;
+		margin-top: -10px;
+	}
+	.pSign_1 {
+		color: #FFBF00;
+	}
+	.pSign_2,
+	.pSign_3 {
+		color: #FFFFFF;
+	}
+}
+
+.wrapperInfo {
+	width: $widthPercent;
+	max-width: $widthMax;
+	height: 335px;
+	margin: 0 auto;
+							
+	.wrapperNumebr {
+		display: block;
+		float: left;
+		width: 31%;
+		height: 210px;
+		margin-top: 60px;
+		margin-right: 2%;
+		overflow: hidden;
+	}						
+	.wrapperNumebr-03 {
+		margin-right: 0;
+	}
+	
+	.infoNumber {
+		display: block;
+		float: left;
+		height: 100%;
+		font-size: 70px;
+		color:#E6E6E6;
+		margin-right: 10px;
+	}
+	
+	h2 {
+		font-size: 18px;
+		margin: 10px 0;
+	}
+	
+	.infoText {
+		font-size: 14px;
+		line-height: 20px;
+	}
+							
+	.infoSign {
+		font-size: 14px;
+		font-weight: bold;
+		margin: 5px 0;
+	
+		.infoSignA {
+			text-decoration: none;
+			color: #000000;
+			margin-right: 5px;
+		}
+		.infoSignArrow {
+			text-decoration: none;
+			color: #0101DF;
+			font-size: 18px;
+			font-weight: bold;
+		}
+	}
+	.infoSign:hover {
+		.infoSignA {
+			color: #0000FF;
+		}
+		.infoSignArrow {
+			color: #000000;
+		}
+	}
+	
+}
+
+.fonGallery {
+	width: 100%;
+	$galleryHeight: 500px;
+	height: $galleryHeight;
+	background: rgba(0, 0, 0, 0.75);
+
+	.wrapperGallery {
+		width: $widthPercent;
+		max-width: $widthMax;
+		height: $galleryHeight;
+		margin: 0 auto;
+									
+		h2 {
+			color: #FFFFFF;
+			padding: 45px 0;
+		}	
+
+		.wrapperFfigureGallery {
+			position: static;
+									// background: rgba(0, 0, 255, 0.2); //debug
+			display: block;
+			float: left;
+			width: $widthPercent;
+			max-width: $widthMax;
+			height: 280px;			
+		}		
+	
+		.figureGallery {
+			display: block;
+			float: left;
+			width: 24%;
+			height: auto;
+			position: relative;
+			left: 0.5%;
+		}
+		.figureGallery-2 {
+			left: 25.5%;
+		}
+		.figureGallery-3 {
+			left: 50.5%;
+		}
+		.figureGallery-4 {
+			left: 75.5%;
+		}		
+		
+		.imgFon {
+			position: absolute;
+			top: 0px;
+			width: 100%;
+			height: auto;
+		}
+		.imgGallery {
+			position: absolute;
+			top: 0px;
+			width: 100%;
+			height: auto;
+		}
+		.imgGallery:hover {
+			opacity: 0.2;
+		}		
+		
+		.figureCaptionBox {
+			position: static;
+									// background: rgba(0, 255, 0, 0.2); //debug
+			display: block;
+			float: left;
+			width: 25%;
+			height: 90px;			
+			text-align: center;
+			padding-top: 10px;
+		}		
+		.figcaptionA {
+			color: #FFFFFF;
+			text-decoration: none;
+		}
+		.figcaptionA:hover {
+			color: #FFBF00;
+		}
+	
+	}
+	
+}
+
+.fonContentMiddle {
+
+	width: $widthPercent;
+	$contentMiddleHeight: 500px;
+	height: $contentMiddleHeight;
+	background: #F7F7F7;
+	
+	.wraperContentMiddle {
+		width: $widthPercent;
+		max-width: $widthMax;
+		height: $contentMiddleHeight;
+		margin: 0 auto;
+		
+		$marginHeight: 35px;
+		.h2 {
+			margin: $marginHeight 0 $marginHeight 10px;
+		}
+			
+		.wraperCollLeft {
+			width: 50%;
+			height: $contentMiddleHeight;
+			display: block;
+			float: left;
+									//background: rgba(0, 255, 0, 0.2); //debug
+			
+			.wraperBoxCollLeft {
+										//background: rgba(0, 0, 255, 0.2); //debug
+				width: 100%;
+				height: 150px;
+				margin-top: $marginHeight;
+				
+				.box_1 {
+					width: 30%;
+					height: 150px;
+					display: block;
+					float: left;
+					
+					.imj_ad {
+						max-width: 100%;					
+						height: auto;
+						max-height: 150px;
+						margin-left: 5%;
+					}
+				}
+				
+				.box_2 {
+					width: 68%;
+					height: 150px;
+					display: block;
+					float: left;
+					overflow: hidden;
+					margin-left: 2%;
+										//background: rgba(0, 255, 255, 0.2); //debug
+					h5{
+						margin: 5px 0;
+						font-size: 16px;
+						font-weight: 700;
+						
+						a {
+							text-decoration: none;
+							color: #000000;
+						}
+					}				
+					.by {
+						font-size: 13px; 
+						color: #424242;
+					}
+					.blue {
+						color: #0000FF;
+					}
+					.text {
+						font-size: 13px;
+						color: #8a8a8a;
+						margin-top: $marginHeight;
+					}
+				}
+				
+				.jan,
+				.num {
+					clear: both;
+					width: 30px;
+					height: 23px;
+					position: relative;
+					top: -140px;
+					text-align: center;
+					font-size: 14px;
+					padding-top: 5px;
+				}
+				.jan {
+					color: white;
+					background: #0000FF;
+				}
+				.num {
+					color: black;
+					background: #FFFF00;
+				}				
+			}		
+		}
+		
+		.wraperCollRight {
+			width: 47%;
+			margin-left: 3%;
+			height: $contentMiddleHeight;
+			display: block;
+			float: left;
+									//background: rgba(0, 255, 0, 0.2); //debug
+		
+			section {
+				display: block;
+			}
+
+			.container{
+				width: 100%;
+				position: relative;
+				text-align: center;
+			}
+			
+		}
+		
+	}	
+}
+
+.wraperLogo {
+
+	width: $widthPercent;
+	$wraperLogoHeight: 240px;
+	height: $wraperLogoHeight;
+	max-width: $widthMax;
+	margin: 0 auto;
+									// background: rgba(0, 255, 0, 0.2); //debug
+		
+	.spriteLogo {
+		width: 180px;
+		height: 63px;
+		display: block;
+		float: left;
+		margin-top: 90px;
+		background: url("../img/logo.png") no-repeat;
+		margin-right: 5px;
+		margin-left: 5px;
+								// border: 1px solid black; //debug
+								// background: rgba(0, 0, 255, 0.2); //debug
+	}
+	.spriteLogo-1 {
+		background-position: 30px 0;
+	}	
+	.spriteLogo-2 {
+		background-position: -150px 0;
+	}	
+	.spriteLogo-3 {
+		background-position: -380px 0;
+	}	
+	.spriteLogo-4 {
+		background-position: -590px 0;
+	}	
+	.spriteLogo-5 {
+		background-position: -790px 0;
+	}	
+	.spriteLogo-6 {
+		background-position: -970px 0;
+	}	
+}
+
+.fonFooterMenu {
+	width: $widthPercent;
+	$FooterMenuHeight: 325px;
+	height: $FooterMenuHeight;
+	background: #2a2d32;
+	
+	.wraperFooterMenu {
+		width: $widthPercent;
+		max-width: $widthMax;
+		height: $FooterMenuHeight;
+		margin: 0 auto;
+								
+		.footerMenu {
+			color: #FFFFFF;
+			display: block;
+			float: left;
+			width: 22%;
+			margin: 50px 4% 0 0;
+			font-size: 16px;
+			font-weight: 700;		
+	
+			li {
+				list-style-type: none;
+				margin-top: 20px;
+				border-bottom: 3px solid #585858;
+				border-bottom-style: ridge;
+	
+				a {
+					text-decoration: none;
+					color: #D8D8D8;
+					font-size: 13px;
+					font-weight: 400;
+				}
+				a:hover {
+					color: #0000FF;
+				}
+			}			
+			li:first-child {
+				margin-top: 30px;
+			}
+		}
+		.footerMenu-Last {
+			margin-right: 0;
+		}		
+	}
+}
+
+.fonFooter {
+	width: $widthPercent;
+	$FooterHeight: 60px;
+	height: $FooterHeight;
+	background: #35383c;
+
+	.wraperFooterBox{
+		width: $widthPercent;
+		max-width: $widthMax;
+		height: $FooterHeight;
+		margin: 0 auto;
+								//background: rgba(0, 0, 255, 0.2); //debug
+								
+		$footerBoxImgMarginTop: 25px;
+		
+		.footerBoxImg {
+			display: block;
+			float: left;
+			margin-top: $footerBoxImgMarginTop - 7px;
+			margin-right: 5px;
+		}						
+								
+		.footerBox {
+			display: block;
+			float: left;
+			color: #8e9091;
+			margin-top: $footerBoxImgMarginTop;
+			font-size: 12px;
+			margin-right: 30px;
+		}
+								
+		.footerBox-Last {
+			float: right;
+			margin-right: 0;
+		}
+		.footerBoxImg-1 {
+			margin-top: $footerBoxImgMarginTop;
+		}
+		.footerBoxImg-2 {
+			margin-top: $footerBoxImgMarginTop - 3px;
+		}
+		.footerBoxImg-Last {
+			margin-top: $footerBoxImgMarginTop - 1px;
+			float: right;
+		}
+	}	
+}
+
+
+
+
+
+
+
+/* MEDIA *********************************************** */
+
+@media only screen and (max-width: 1140px) {
+
+	.wraperLogo {
+		height: 240px;
+			
+		.spriteLogo {
+			margin-top: 20px;
+		}
+	}	
+}
+
+@media only screen and (max-width: 960px) {
+
+	.fonGallery {
+		$galleryHeight: 450px;
+		height: $galleryHeight;
+
+		.wrapperGallery {
+			height: $galleryHeight;
+			
+			.wrapperFfigureGallery {
+				height: 230px;			
+			}		
+			.figureCaptionBox {
+				height: 40px;			
+			}
+		}
+	}
+	
+	.fonContentMiddle {
+		.wraperContentMiddle {
+			.wraperBoxCollLeft {
+				.box_2 {
+					width: 65%;
+					margin-left: 5%;
+				}
+			}
+		}
+	}
+
+	.wraperLogo {
+		height: 240px;
+			
+		.spriteLogo {
+			margin-top: 20px;
+		}
+	}	
+}
+ 
+@media only screen and (max-width: 768px) {
+
+	.fonGallery {
+		$galleryHeight: 350px;
+		height: $galleryHeight;
+
+		.wrapperGallery {
+			height: $galleryHeight;
+			
+			.wrapperFfigureGallery {
+				height: 180px;			
+			}		
+			.figureCaptionBox {
+				height: 40px;			
+			}
+		}
+	}
+}
