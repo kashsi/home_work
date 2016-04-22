@@ -1,0 +1,8 @@
+{
+  "name": "project",
+  "version": "4.4.2",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "qunitjs": "^2.0.0-rc1"
+  },
+}

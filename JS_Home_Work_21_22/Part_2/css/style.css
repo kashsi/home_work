@@ -1,0 +1,96 @@
+@charset 'UTF-8';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #F2F2F2;
+}
+
+.wrapperBox {
+	max-width: 600px;
+	margin: 20px auto 20px auto;
+	padding: 10px;
+	border: 2px solid blue;
+	border-radius: 15px;
+	background-color: rgb(240, 240, 255);
+}
+
+.pTmpl {
+	text-align: center;
+	font-family: tahoma, helvetica, arial;
+	font-size: 28px;
+}
+
+.wrapperQuestBox {
+	font-family: tahoma, helvetica, arial;
+	font-size: 18px;
+	margin: 20px 0 20px 0;
+}
+
+li {
+	font-size: 14px;
+	list-style: none;
+	margin: 10px 0 10px 15px;
+}
+
+.wrapperButtonBox {
+	max-width: 200px;
+	height: 50px;
+	margin: 30px auto 30px auto;
+}
+
+.verifyButton {
+	max-width: 200px;
+	height: 50px;
+	padding: 0 20px;
+	font-family: tahoma, helvetica, arial;
+	font-size: 18px;
+	border-radius: 10px;
+	background: linear-gradient(to top, #A9A9F5, #E0F8F7);
+}
+
+
+
+.modalOverlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 50, 0.25);
+}
+
+.modalDialog {
+	position: absolute;
+	width: 300px;
+	height: 100px;
+	top: 50%;
+	left: 50%;
+	margin: -50px 0 0 -150px;
+	background-color: rgba(250, 250, 255, 0.95);
+	border: 10px solid gray;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6);
+	text-align: center;
+}
+
+#estimate {
+	width: 95%;
+	height: 40%;
+	margin: 0 auto 0 auto;
+	padding: 25px 0 0 0;
+	text-align: center;
+}
+
+.closeButton {
+	float: right;
+	margin-right: 10px;
+	width: 90px;
+	height: 30px;
+	background: linear-gradient(to top, #A9A9F5, #E0F8F7);
+	border-radius: 8px;
+}
+
