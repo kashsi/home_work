@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<title>JavascriptHomeWork_23_24</title>
+		
+		<link href="css/style.css" rel="stylesheet" type="text/css">	
+		
+		<script data-main="js/main.js" src="js/require.js" type="text/javascript" defer></script>
+		
+	</head>
+	
+	<body>	
+	
+		<script type="text/template" id="wrapper-template">
+		
+			<div class="wrapper">			
+				<ul class="item-list"></ul>				
+				<div class="controls">
+					<input type="text" class="item-value">
+					<button class="item-add">Add</button>
+				</div>
+			</div>
+			
+		</script>
+
+		<script type="text/template" id="list-template">
+		
+			<% for (var i = 0; i < data.length; i++) { %>
+				<li class="item-li"><%= data[i] %> 
+					<a href="#" data-value="<%= data[i] %>" class="item-delete">X</a>
+					<a href="#" data-value="<%= data[i] %>" class="item-edit">E</a>
+				</li>
+			<% } %>
+			
+		</script>	
+
+	</body>
+
+</html>
