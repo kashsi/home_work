@@ -1,0 +1,1148 @@
+@charset 'UTF-8';
+
+
+@font-face {
+    font-family: MontserratBold; 
+    src: url(../fonts/Montserrat-Bold.eot);
+    src: local(MontserratBold), url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: RobotoLight; 
+    src: url(../fonts/Roboto-Light.eot);
+    src: local(RobotoLight), url(../fonts/Roboto-Light.ttf);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/* HEADER ************************************************************* */
+
+$globalWidth: 100%;
+$wrapperGlobalWidth: 1440px;
+$wrapperWidth: 960px;
+$marginTopHeaderTop: 45px;
+
+header {
+
+	$headerHeight: 700px;	
+	
+	height: $headerHeight;
+	width: $globalWidth;
+
+	.wrapperHeader {
+		display: block;
+		height: $headerHeight;
+		max-width: $wrapperGlobalWidth;
+		margin: 0 auto 0 auto;
+		background: url(../img/header.jpg) no-repeat;
+		background-position: top center;
+		background-size: cover;
+		
+		.HeaderTopLeft {
+			display: block;
+			float: left;
+			width: 175px;
+			margin-top: $marginTopHeaderTop;
+			margin-left: 205px;
+			
+			p {
+				color: #FFFFFF;
+				font-family: MontserratBold;
+				font-size: 20px;
+			}
+		}
+		
+		.HeaderTopRight {
+			display: block;
+			float: right;
+			width: 160px;
+			margin-top: 39px;
+			margin-right: 198px;
+			
+			span {
+				color: #FFFFFF;
+				font-family: MontserratBold;
+				font-size: 14px;
+				padding-right: 16px;
+			}
+			
+			button {
+				color: #FFFFFF;
+				background: transparent;
+				height: 35px;
+				width: 89px;
+				border: 2px solid #FFFFFF;
+				border-radius: 20px;
+				font-family: MontserratBold;
+				font-size: 14px;				
+			}
+			
+			button:hover {
+				color: #00FFFF;
+				cursor: pointer;
+			}
+			
+		}
+		
+		.HeaderH {
+			margin: 0 auto 0 auto;
+			width: 485px;
+			height: 0.5*$headerHeight;
+			text-align: center;
+			vertical-align: middle;
+			padding-top: 0.25*$headerHeight + 38px;
+		
+			h1 {
+				color: #FFFFFF;
+				text-transform: uppercase;
+				font-family: MontserratBold;
+				font-size: 52px;
+			}
+			
+			p {
+				color: #FFFFFF;
+				font-family: RobotoLight;
+				font-size: 24px;
+				padding-top: 22px;
+			}
+			
+			button {
+				color: #FFFFFF;
+				background: #ff4e50;
+				height: 40px;
+				width: 225px;
+				border: none;
+				border-radius: 20px;
+				font-family: MontserratBold;
+				font-size: 14px;
+				margin-top: 33px;
+			}
+			
+			button:hover {
+				color: #00FFFF;
+				cursor: pointer;
+			}
+			
+		}
+		
+	}
+}
+
+
+/* CONTENT ************************************************************* */
+
+.sectionCarusels {
+
+	$sectionCaruselsHeight: 600px;	
+	$wrapperCaruselWidth: 300px;	
+	$wrapperCaruselHeight: 400px;
+	$marginCarusel: 10px;	
+	
+	height: $sectionCaruselsHeight;
+	max-width: $wrapperGlobalWidth;
+	margin: 0 auto 0 auto;
+										
+	h2 {
+		color: #000000;
+		font-family: MontserratBold;
+		font-size: 22px;
+		text-align: center;
+		padding-top: 94px;
+	}
+	
+	/* Carusel */
+	
+	.wrapperAllCarusels {
+		width: 3 * $wrapperCaruselWidth + 6 * $marginCarusel;
+		height: $wrapperCaruselHeight;
+		margin: 34px auto 0 auto;
+	
+		.wrapperCarusel{
+			width: $wrapperCaruselWidth;
+			height: $wrapperCaruselHeight;
+			float: left;
+			margin: 0 $marginCarusel;
+			overflow: hidden;
+										
+			.jcarousel-wrapper {
+				margin: 0;
+				position: relative;
+				width: 100%;
+				height: $wrapperCaruselHeight;
+				-webkit-border-radius: 5px;
+				   -moz-border-radius: 5px;
+						border-radius: 5px;
+						
+				.jcarousel {
+					position: relative;
+					overflow: hidden;
+				}
+				
+				.imgCarousel {
+					width: 100%;
+					height: $wrapperCaruselHeight;
+					overflow: hidden;
+					display: inline-block;
+				}
+
+				.jcarousel ul {
+					width: 20000em;
+					position: relative;
+					list-style: none;
+					margin: 0;
+					padding: 0;
+				}
+
+				.jcarousel li {
+					float: left;
+				}
+
+				.jcarousel-control-prev,
+				.jcarousel-control-next {
+					position: absolute;
+					top: 0.5 * $wrapperCaruselHeight - 47px;
+					width: 30px;
+					height: 55px;
+				}					
+
+				.jcarousel-control-prev {
+					left: 20px;
+					background-image: url(../img/arr_left.png);
+				}
+
+				.jcarousel-control-next {
+					right: 20px;
+					background-image: url(../img/arr_right.png);
+				}
+
+				.jcarousel-control-prev:hover span,
+				.jcarousel-control-next:hover span {
+					display: block;
+				}
+				
+				section {
+					position: absolute;
+					top: $wrapperCaruselHeight - 171px;
+					padding: 0 20px 0 20px;						
+				
+					h2 {
+						padding: 15px 0 10px 0;
+						text-align: left;
+						color: #FFFFFF;
+					}
+					
+					p {
+						color: #FFFFFF;
+						font-family: RobotoLight;
+						font-size: 14px;
+					}
+					
+					button {
+						color: #FFFFFF;
+						background: #ff4e50;
+						height: 20px;
+						width: 70px;
+						border: none;
+						border-radius: 10px;
+						font-family: RobotoLight;
+						font-size: 10px;
+						left: 20px;
+					}
+					
+					button:hover {
+						color: #00FFFF;
+						cursor: pointer;
+					}
+				
+				}
+				
+				.wrapperCaruselSign-2 {
+					top: $wrapperCaruselHeight - 141px;
+				}
+
+			}								
+										
+		}
+	
+	}			
+										
+}
+
+.sectionPartners {
+
+	$sectionPartnersHeight: 480px;
+	$itemPartnerHeight: 240px;
+	$itemPartnerWidth: 220px;	
+	$imgPartnerWrapperHeight: 122px;
+	$imgPartnerWrapperWidth: 122px;
+	$imgPartnerWrapperSignHeight: 40px;
+	$imgPartnerWrapperSignWidth: 40px;
+	
+	height: $sectionPartnersHeight;
+	max-width: $wrapperGlobalWidth;
+	margin: 0 auto 0 auto;
+										
+	h2 {
+		color: #000000;
+		font-family: MontserratBold;
+		font-size: 22px;
+		text-align: center;
+		padding-top: 50px;
+	}
+	
+	$itemPartnermarginright: 20px;
+	
+	.itemPartnersWrapper {
+		margin: 31px auto 0 auto;
+		height: $itemPartnerHeight;
+		width: 4 * $itemPartnerWidth + 3 * $itemPartnermarginright;
+	
+		.itemPartner {
+			display: block;
+			float: left;
+			color: #000000;
+			display: block;
+			height: $itemPartnerHeight;
+			width: $itemPartnerWidth;
+			margin-right: $itemPartnermarginright;
+			
+			.imgPartnerWrapper {
+				display: block;
+				height: $imgPartnerWrapperHeight;
+				width: $imgPartnerWrapperWidth;
+				background: url(../img/Bradley_1.png) no-repeat;
+				background-position: top center;
+				background-size: cover;
+				border-radius: 0.5 * $imgPartnerWrapperWidth;
+				margin: 0 auto 0 auto;
+				
+				.imgPartnerWrapperSign {
+					display: block;
+					position: relative;
+					height: $imgPartnerWrapperSignHeight;
+					width: $imgPartnerWrapperSignWidth;
+					left: $imgPartnerWrapperWidth - $imgPartnerWrapperSignWidth + 4px;
+					top: $imgPartnerWrapperHeight - $imgPartnerWrapperSignHeight + 4px;
+					background: url(../img/TV.png) no-repeat;
+					background-position: top center;
+					background-size: cover;
+					border-radius: 0.5 * $imgPartnerWrapperSignWidth;
+				}
+				
+			}
+			
+			h3 {
+				color: #000000;
+				font-family: MontserratBold;
+				font-size: 14px;
+				text-align: center;
+				margin-top: 18px;
+			}
+			
+			p {
+				color: #000000;
+				font-family: RobotoLight;
+				font-size: 14px;
+				text-align: center;
+				margin-top: 11px;
+				line-height: 17px;
+			}
+
+		}
+	
+		.itemPartner-2,
+		.itemPartner-3,
+		.itemPartner-4
+		{
+			margin-left: 0;
+		}
+		
+		.itemPartner-4
+		{
+			margin-right: 0;
+		}
+		
+		.itemPartner-2 {
+		
+			.imgPartnerWrapper-2 {
+				background: url(../img/Heather.png) no-repeat;
+				
+				.imgPartnerWrapperSign-2 {
+					background: url(../img/Cup.png) no-repeat;
+				}			
+			}	
+		}
+		
+		.itemPartner-3 {
+		
+			.imgPartnerWrapper-3 {
+				background: url(../img/Lucash.png) no-repeat;
+				
+				.imgPartnerWrapperSign-3 {
+					background: url(../img/mishure.png) no-repeat;
+				}			
+			}	
+		}
+		
+		.itemPartner-4 {
+		
+			.imgPartnerWrapper-4 {
+				background: url(../img/Bradley_2.png) no-repeat;
+				
+				.imgPartnerWrapperSign-4 {
+					background: url(../img/arr.png) no-repeat;
+				}			
+			}	
+		}
+	
+	}
+	
+	button {
+		clear: both;
+		display: block;
+		margin: 33px auto 0 auto;
+		width: 190px;
+		height: 40px;
+		border-radius: 18px;
+		color: #ff4e50;
+		font-family: MontserratBold;
+		font-size: 14px;
+		border: 2px solid #ff4e50;
+		background: #FFFFFF;
+	}
+	
+	button:hover {
+		color: #00FFFF;
+		cursor: pointer;
+		background: #aFaFaF;
+	}
+				
+}
+
+$itemMasonryHeight: 310px;
+$sectionSquareHeight: 1075px;
+$itemMasonryWidth: 300px;
+$itemMasonryMargin: 10px;
+
+.sectionMasonry {
+
+	height: $sectionSquareHeight;
+	max-width: $wrapperWidth;
+	margin: 0 auto 0 auto;
+										
+	h2 {
+		color: #000000;
+		font-family: MontserratBold;
+		font-size: 22px;
+		text-align: center;
+		padding-top: 37px;
+		margin-bottom: 24px;
+	}
+	
+	.wrapper {
+		max-width: $wrapperWidth;								
+								
+		.item {
+			width: $itemMasonryWidth;
+			height: $itemMasonryHeight; 
+			float: left;
+			margin: $itemMasonryMargin;
+			background: #e0e0e0;
+			background-size: cover;
+			border-radius: 4px;
+			
+			p {
+				color: #FFFFFF;
+				font-family: MontserratBold;
+				font-size: 22px;
+				text-align: center;
+				padding-top: 140px;				
+			}
+			
+		}
+		
+		.item_w5,
+		.item_w6
+		{
+			width: 2 * ($itemMasonryWidth + $itemMasonryMargin);
+		}
+		
+	}
+	
+}
+
+.sectionSearchPartners {
+
+	$sectionSearchPartners: 345px;
+
+	height: $sectionSearchPartners;
+	max-width: $wrapperGlobalWidth;
+	margin: 0 auto 0 auto;
+										
+	h2 {
+		color: #000000;
+		font-family: MontserratBold;
+		font-size: 22px;
+		text-align: center;
+		padding-top: 88px;
+	}
+
+	h3 {
+		color: #000000;
+		font-family: RobotoLight;
+		font-size: 18px;
+		text-align: center;
+		margin-top: 30px;
+	}
+	
+	.wrapperSearch {
+	
+		$inputSearchWidth: 225px;
+		$buttonSearchWidth: 160px;
+		$inputSearchHeight: 40px;
+		$buttonSearchMarginLeft: 5px;
+		$inputSearchPaddingLeft: 14px;
+		
+		width: $inputSearchWidth + $buttonSearchWidth + $buttonSearchMarginLeft + $inputSearchPaddingLeft + 9px;
+		height: $inputSearchHeight + 4px;
+		margin: 36px auto 0 auto;
+	
+		.inputSearch {
+			width: $inputSearchWidth;
+			height: $inputSearchHeight;
+			padding-left: $inputSearchPaddingLeft;
+			border-radius: 4px;
+		}
+		
+		button {
+			color: #FFFFFF;
+			background: #ff4e50;
+			height: $inputSearchHeight;
+			width: $buttonSearchWidth;
+			border: none;
+			border-radius: 0.5 * $inputSearchHeight;
+			font-family: MontserratBold;
+			font-size: 14px;
+			margin-left: $buttonSearchMarginLeft;
+		}
+		
+		button:hover {
+			color: #00FFFF;
+			cursor: pointer;
+		}
+	
+	}
+
+}
+
+/* FOOTER ************************************************************* */
+
+footer {
+
+	$footerHeight: 170px;
+	$marginTop: 37px;
+	
+	height: $footerHeight;
+	width: $globalWidth;
+	border-top: 4px solid #ff4e50;
+	
+	.wrapperFooter {
+		height: $footerHeight - 4px;
+		max-width: $wrapperWidth;
+		margin: 0 auto 0 auto;
+										
+		h2 {
+			color: #ff4e50;
+			font-family: MontserratBold;
+			font-size: 16px;
+			text-align: left;
+			width: 160px;
+			padding-top: $marginTop;
+			margin-right: 80px;
+			float: left;
+			margin-left: 10px;
+		}
+		
+		.companyFooter {
+			width: 80px;
+			height: 160px;
+			margin-right: 80px;
+			float: left;
+			
+			h3 {
+				color: #000000;
+				font-family: MontserratBold;
+				font-size: 14px;
+				text-align: left;
+				padding-top: $marginTop;
+			}
+			
+			ul {
+				color: #000000;
+				font-family: RobotoLight;
+				font-size: 14px;
+				margin-top: 11px;
+				list-style-type: none;
+				
+				li {
+					min-height: 24px;
+				}
+				
+				li:hover {
+					color: #050500;
+					cursor: pointer;
+				}
+				
+			}
+			
+		}
+										
+		h4 {
+			color: #000000;
+			font-family: MontserratBold;
+			font-size: 14px;
+			text-align: left;
+			padding-top: $marginTop;
+			float: left;
+			width: 80px;
+		}
+		
+		.logoAreto {
+			width: 115px;
+			height: 45px;
+			float: right;
+			margin-top: $marginTop + 2px;
+			padding-right: 5px;
+										
+			p {
+				color: #777777;
+				font-family: MontserratBold;
+				font-size: 10px;
+				text-align: right;
+				padding-right: 6px;
+			}
+			
+			img {
+				margin-top: 5px;
+			}
+			
+		}
+			
+	}
+	
+}
+
+/* MEDIA ******************************************************** */
+/* 980 ******************************************************** */
+@media screen and (max-width: 980px) {
+
+/* CONTENT ************************************************************* */
+
+	.sectionCarusels {
+
+		$wrapperCaruselWidth: 30%;	
+		$marginCarusel: 1%;		
+		
+		.wrapperAllCarusels {
+			width: 3 * $wrapperCaruselWidth + 6 * $marginCarusel;
+		
+			.wrapperCarusel{
+				width: $wrapperCaruselWidth;
+				margin: 0 $marginCarusel;
+				
+				.jcarousel-wrapper {
+				
+					.jcarousel-control-prev,
+					.jcarousel-control-next {
+						top: 60px;
+					}
+					
+					section {
+						top: 190px;
+					}
+					
+				}
+					
+			}
+			
+		}
+		
+	}
+
+	.sectionPartners {
+
+		$sectionPartnersWidth: 512px;
+		$sectionPartnersHeight: 707px;
+		$itemPartnerWrapperHeight: 499px;
+		$itemPartnerHeight: 259px;
+		$itemPartnerWidth: 236px;	
+		
+		height: $sectionPartnersHeight;
+		width: $sectionPartnersWidth;
+											
+		h2 {
+			padding-left: 10px;
+		}
+		
+		.itemPartnersWrapper {
+			height: $itemPartnerWrapperHeight;
+			width: $sectionPartnersWidth;
+		
+			.itemPartner {
+				width: $itemPartnerWidth;
+				height: $itemPartnerHeight;
+				margin-left: 19px;
+				margin-right: 0;
+				
+				p {
+					margin: 11px auto 0 auto;
+					line-height: 17px;
+					width: 220px;
+				}
+				
+			}			
+		
+		}
+					
+	}
+	
+	.sectionMasonry {
+		height: $sectionSquareHeight + $itemMasonryHeight;
+		
+		.wrapper {
+			width: 2 * ($itemMasonryWidth + 2 * $itemMasonryMargin);
+			margin: 0 auto;
+			
+			.item_w6
+			{
+				width: $itemMasonryWidth;
+			}
+			
+		}
+		
+	}
+
+}
+/* end 980 ******************************************************** */
+
+/* 768 ******************************************************** */
+@media screen and (max-width: 768px) {
+
+	$wrapperGlobalWidth: 100%;
+	$wrapperWidth: 768px;
+
+	header {
+
+		.wrapperHeader {
+			width: $wrapperGlobalWidth;
+			
+			.HeaderTopLeft {
+				margin-left: 48px;			
+			}
+			
+			.HeaderTopRight {
+				margin-right: 42px;				
+			}
+
+			.HeaderH {
+			    padding-right: 3px;
+			}
+		}		
+	}
+
+	/* CONTENT ************************************************************* */
+
+	.sectionCarusels {
+
+		$wrapperCaruselWidth: 236px;	
+		$marginCarusel: 10px;
+
+		h2 {
+		    padding-left: 22px;
+		}
+											
+		/* Carusel */
+		
+		.wrapperAllCarusels {
+			width: 3 * $wrapperCaruselWidth + 6 * $marginCarusel;
+		
+			.wrapperCarusel {
+				width: $wrapperCaruselWidth;
+				
+				.jcarousel-wrapper {
+				
+					.jcarousel-control-prev,
+					.jcarousel-control-next {
+						top: 40px;
+					}
+					
+					section {
+						top: 211px;
+					}
+					
+				}
+				
+			}
+			
+			.wrapperCaruselSign-2 {
+				top: 258px;
+			}
+			
+			.wrapperCarusel_3 {
+				margin-right: 0px;
+			}
+		
+		}			
+											
+	}
+
+	.sectionMasonry {
+
+		$sectionSquareHeight: 1074px;
+
+		height: $sectionSquareHeight;
+		width: $wrapperWidth;
+		
+		h2 {
+			margin-top: 32px;
+		}
+		
+											
+		.wrapper {
+			width: $wrapperWidth;
+											
+			$itemMasonryWidth: 236px;
+			$itemMasonryMargin: 10px;
+									
+			.item {
+				width: $itemMasonryWidth;
+				margin: $itemMasonryMargin;
+			}
+			
+			.item_w5,
+			.item_w6
+			{
+				width: 2 * ($itemMasonryWidth + $itemMasonryMargin);
+			}
+			
+		}
+		
+	}
+
+	.sectionSearchPartners {
+		width: $wrapperGlobalWidth;										
+
+	}
+
+/* FOOTER ************************************************************* */
+
+	footer {
+		width: $wrapperGlobalWidth;
+		
+		.wrapperFooter {
+			width: $wrapperGlobalWidth;
+			
+			h2 {
+				margin-left: 40px;
+				margin-right: 65px;
+			}
+			
+			.companyFooter {
+				margin-right: 92px;
+			}
+			
+			.logoAreto {
+				padding-right: 35px;
+			}
+			
+		}
+		
+	}	
+	
+}
+/* end 768 media ******************************************************** */
+
+/* 320 ******************************************************** */
+
+@media only screen and (max-width: 320px) {
+
+	$wrapperWidth: 320px;
+	$wrapperHeight: 540px;
+
+	header {
+		max-width: $wrapperWidth;		
+		height: $wrapperHeight;
+
+		.wrapperHeader {
+			width: $wrapperWidth;
+			height: $wrapperHeight;
+			
+			.HeaderTopLeft {
+				margin-left: 70px;
+				margin-top: 116px;				
+			}
+			
+			.HeaderTopRight {
+				margin-right: 77px;
+				margin-top: 20px;				
+			}
+
+			.HeaderH {
+			    padding-right: 3px;
+				width: 280px;
+				height: 250px;
+				
+				h1 {
+					font-size: 30px;
+					margin-top: 15px;
+					line-height: 23px;
+				}
+			
+				p {
+					font-size: 18px;
+					padding-left: 30px;
+					padding-right: 30px;
+					padding-top: 14px;
+					line-height: 21px;
+				}
+				
+				button {
+					margin-top: 16px;
+					width: 277px;
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	/* CONTENT ************************************************************* */
+
+	.sectionCarusels {
+
+		$sectionCaruselsHeight: 840px;
+		$wrapperCaruselHeight: 240px;		
+		$wrapperCaruselWidth: 300px;
+		$marginCarusel: 10px;
+		
+		height: $sectionCaruselsHeight;
+
+		h2 {
+		    padding-left: 14px;
+			padding-top: 34px;
+		}
+											
+		/* Carusel */
+		
+		.wrapperAllCarusels {
+			width: $wrapperCaruselWidth + 2 * $marginCarusel;
+			margin: 14px auto 0 auto;
+			height: 3 * $wrapperCaruselHeight + 2 * $marginCarusel;
+		
+			.wrapperCarusel {
+				width: $wrapperCaruselWidth;
+				height: $wrapperCaruselHeight;
+				margin-top: 0px;
+				margin-left: $marginCarusel;
+				margin-bottom: $marginCarusel;
+				
+				.jcarousel-wrapper {
+					width: 100%;
+					height: 100%;
+					
+					.imgCarousel {
+						width: 100%;
+						height: 100%;
+					}
+					
+					.jcarousel-control-prev,
+					.jcarousel-control-next {
+						display: none;
+					}
+					
+					section {
+						top: 70px;
+					}
+					
+					.wrapperCaruselSign-2 {
+						top: 100px;
+					}
+				
+				}
+				
+			}
+			
+		}			
+											
+	}
+
+	.sectionPartners {
+
+		$sectionPartnersHeight: 1060px;
+		$itemPartnerWrapperHeight: 950px;
+		$itemPartnerHeight: 229px;
+		$itemPartnerWidth: 236px;	
+		
+		height: $sectionPartnersHeight;
+		max-width: $wrapperWidth;
+											
+		h2 {
+			padding-left: 3px;
+			padding-top: 10px;
+			padding-right: 8px;
+		}
+		
+		.itemPartnersWrapper {
+			height: $itemPartnerWrapperHeight;
+			width: 275px;
+			margin-top: 12px;
+		
+			.itemPartner {
+				width: $itemPartnerWidth;
+				height: $itemPartnerHeight;
+				margin-left: 19px;
+				margin-right: 0;
+				
+				p {
+					margin: 11px auto 0 auto;
+					line-height: 17px;
+					width: 220px;
+				}
+				
+			}			
+		
+			.itemPartner-3 {
+				margin-top: 33px;
+			}
+			
+		}
+					
+		button {
+			margin-top: 0px;
+			width: 280px;
+		}
+			
+	}
+	
+	.sectionMasonry {
+
+		$sectionSquareHeight: 1000px;
+
+		height: $sectionSquareHeight;
+		width: $wrapperWidth;
+		
+		h2 {
+			margin-top: 1px;
+			margin-bottom: 3px;
+		}
+		
+											
+		.wrapper {
+			width: $wrapperWidth;
+											
+			$itemMasonryWidth: 300px;
+			$itemMasonryHeight: 120px;
+			$itemMasonryMargin: 10px;
+									
+			.item {
+				width: $itemMasonryWidth;
+				height: $itemMasonryHeight;
+				margin: $itemMasonryMargin $itemMasonryMargin 0 $itemMasonryMargin;
+			}			
+			
+		}
+		
+	}
+
+	.sectionSearchPartners {
+		height: 270px;
+											
+		h2 {
+			padding-top: 40px;
+		}
+
+		h3 {
+			margin-top: 8px;
+		}
+		
+		.wrapperSearch {
+		
+			width: $wrapperWidth;
+			height: 104px;
+			margin-top: 15px;
+		
+			.inputSearch {
+				width: 263px;
+				margin-left: 18px;
+			}
+			
+			button {
+				margin-left: 18px;
+				float: none;
+				width: 280px;
+				margin-top: 5px;
+			}
+		
+		}
+
+	}
+	
+/* FOOTER ************************************************************* */
+
+	footer {
+		
+		height: 190px;
+		
+		.wrapperFooter {
+			height: 185px;
+			
+			h2 {
+				margin-left: 88px;
+				margin-right: 0px;
+				margin-top: -20px;
+			}
+			
+			.companyFooter {
+				margin: 0 auto;
+				width: 280px;
+				height: 60px;
+				float: none;
+				
+				h3 {
+					text-align: center;
+					padding-top: 47px;
+					padding-left: 15px;
+				}
+				
+				ul {
+					margin-top: 0px;
+					text-align: center;
+					li {
+						display : inline;
+						padding-right: 3px;
+						padding-left: 6px;
+					}
+				}
+			}
+			
+			h4 {
+				text-align: center;
+				padding-left: 120px;
+			}
+			
+			.logoAreto {
+				padding-right: 0px;
+				margin: 70px auto 0 auto;
+				float: none;
+				padding-left: 20px;
+			}
+			
+		}
+		
+	}
+
+}
+/* end 320 media ******************************************************** */
